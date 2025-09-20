@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniEnciclopedia - Contacto</title>
+</head>
+<body>
+  <header>
+        <a href="../PaginaPrincipal.html" class="logo-link">
+            <img src="../Imágenes/Logo.png" 
+                alt="Logo Enciclopedia" 
+                width="300" 
+                height="75">
+        </a>
+        <h1>Formulario de contacto</h1>
+  </header>  
+
+  <main>
+
+    <form action="RespuestaContacto.html" method="get">
+
+      <!-- Asunto -->
+      <p>
+        <label for="asunto">Asunto <span aria-hidden="true">*</span></label><br>
+        <input type="text" id="asunto" name="asunto" required>
+      </p>
+
+      <!-- Comentario -->
+      <p>
+        <label for="comentario">Comentario o pregunta <span aria-hidden="true">*</span></label><br>
+        <textarea id="comentario" name="comentario" rows="6" required></textarea>
+      </p>
+
+      <!-- Yo soy -->
+      <p>
+        <label for="yo-soy">Yo soy</label><br>
+        <select id="yo-soy" name="yo_soy">
+          <option value="" selected disabled>Selecciona una opción</option>
+          <option value="paciente">Paciente</option>
+          <option value="cientifico">Científico</option>
+          <option value="medico">Médico</option>
+          <option value="educador">Educador</option>
+          <option value="fabricante">Fabricante</option>
+          <option value="periodista">Periodista</option>
+        </select>
+      </p>
+
+      <!-- Fecha de nacimiento -->
+      <p>
+        <label for="fecha-nac">Fecha de nacimiento</label><br>
+        <input type="date" id="fecha-nac" name="fecha_nacimiento">
+      </p>
+
+      <!-- Sexo -->
+      <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" id="sexo-hombre" name="sexo" value="hombre">
+        <label for="sexo-hombre">Hombre</label><br>
+
+        <input type="radio" id="sexo-mujer" name="sexo" value="mujer">
+        <label for="sexo-mujer">Mujer</label><br>
+
+        <input type="radio" id="sexo-otro" name="sexo" value="otro">
+        <label for="sexo-otro">Otro</label>
+      </fieldset>
+
+      <!-- Correo -->
+      <p>
+        <label for="email">Correo electrónico</label><br>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+      </p>
+
+      <!-- Checkbox -->
+      <p>
+        <input type="checkbox" id="info" name="deseo_info" value="si">
+        <label for="info">Deseo recibir más información</label>
+      </p>
+
+      <!-- Botones -->
+      <p>
+        <button type="submit">Enviar</button>
+        <button type="reset">Resetear</button>
+      </p>
+
+    </form>
+  </main>
+</body>
+</html>
+
+
+
+

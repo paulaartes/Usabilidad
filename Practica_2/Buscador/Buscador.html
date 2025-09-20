@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        MiniEnciclopedia - Buscador
+    </title>
+</head>
+<body>
+    <header>
+        <a href="../PaginaPrincipal.html" class="logo-link">
+            <img src="../Imágenes/Logo.png" 
+                alt="Logo Enciclopedia" 
+                width="300" 
+                height="75">
+        </a>
+    </header>
+
+    <main>
+        <form action="RespuestaBuscador.html">
+            <section id="Descripción">
+                <label for="Descripción">Descripción:</label><br>
+                <input type="text" id="Descripción" name="Descripción" required><br>
+                <br>
+            </section>
+
+            <section id="Causas">
+                <label for="Causas">Causas:</label><br>
+                <input type="text" id="Causas" name="Causas"><br>
+                <br>
+            </section>
+
+            <section id="Síntomas">
+                <label for="Síntomas">Síntomas:</label><br>
+                <select id="cars" name="cars">
+                    <option value="Fiebre">Fiebre</option>
+                    <option value="Cefalea">Cefalea</option>
+                    <option value="Tos">Tos</option>
+                    <option value="Fatiga">Fatiga</option>
+                    <option value="Náuseas">Náuseas</option>
+                    <option value="Dolor muscular">Dolor muscular</option>
+                    <option value="Dolor articular">Dolor articular</option>
+                    <option value="Mareos">Mareos</option>
+                    <option value="Disnea">Disnea</option>
+                </select>
+                <br><br>
+            </section>
+
+            <section id="Pruebas y exámenes">
+                <label for="Pruebas y exámenes">Pruebas y exámenes:</label><br>
+                <select id="cars" name="cars">
+                    <option value="Analítica de sangre">Analítica de sangre</option>
+                    <option value="Medición de la Presión Arterial">Medición de la Presión Arterial</option>
+                    <option value="Electrocardiograma ">Electrocardiograma </option>
+                    <option value="Radiografía">Radiografía</option>
+                    <option value="Resonancia Magnética">Resonancia Magnética</option>
+                    <option value="Test cutáneo">Test cutáneo</option>
+                    <option value="Uroanálisis">Uroanálisis</option>
+                    <option value="TAC">TAC</option>
+                    <option value="Electroencéfalograma">Electroencéfalograma</option>
+                </select>
+                <br><br>
+            </section>
+
+            <section id="Tratamiento">
+                <label for="Tratamiento">Tratamiento:</label><br>
+                <input type="text" id="Tratamiento" name="Tratamiento"><br>
+                <br>
+            </section>
+
+            <section id="Expectativas">
+                <label for="Expectativas">Expectativas:</label><br>
+                <input type="radio" id="Positivas" name="Expectativas" value="Positivas">
+                <label for="Positivas">Positivas</label><br>
+                <input type="radio" id="Negativas" name="Expectativas" value="Negativas">
+                <label for="Negativas">Negativas</label><br>
+                <input type="radio" id="Sin definir" name="Expectativas" value="Sin definir">
+                <label for="Sin definir">Sin definir</label><br>
+                <br>
+            </section>
+
+            <input type="submit" value="Buscar">
+        </form>
+    </main>
+
+    <footer>
+        <p>© Paula Artés | Iván Galiano </p>
+        <p> Curso 2025-2026 </p>
+        <p> Grado en Ingeniería Biomédica UA </p>
+    </footer>
+    
+</body>
+</html>
