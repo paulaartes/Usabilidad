@@ -8,21 +8,16 @@
   <main>
     <h1>Formulario de contacto</h1>
 
-    <form action="Confirmacion.html" method="get">
-
-      <!-- Asunto -->
       <p>
         <label for="asunto">Asunto <span aria-hidden="true">*</span></label><br>
         <input type="text" id="asunto" name="asunto" required>
       </p>
 
-      <!-- Comentario -->
       <p>
         <label for="comentario">Comentario o pregunta <span aria-hidden="true">*</span></label><br>
         <textarea id="comentario" name="comentario" rows="6" required></textarea>
       </p>
 
-      <!-- Yo soy -->
       <p>
         <label for="yo-soy">Yo soy</label><br>
         <select id="yo-soy" name="yo_soy">
@@ -36,13 +31,11 @@
         </select>
       </p>
 
-      <!-- Fecha de nacimiento -->
       <p>
         <label for="fecha-nac">Fecha de nacimiento</label><br>
         <input type="date" id="fecha-nac" name="fecha_nacimiento">
       </p>
 
-      <!-- Sexo -->
       <fieldset>
         <legend>Sexo</legend>
         <input type="radio" id="sexo-hombre" name="sexo" value="hombre">
@@ -55,21 +48,20 @@
         <label for="sexo-otro">Otro</label>
       </fieldset>
 
-      <!-- Correo -->
       <p>
         <label for="email">Correo electrónico</label><br>
         <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
       </p>
 
-      <!-- Checkbox -->
       <p>
         <input type="checkbox" id="info" name="deseo_info" value="si">
         <label for="info">Deseo recibir más información</label>
       </p>
 
-      <!-- Botones -->
+      <a href="Confirmacion.html">
+            <button type="button">Enviar</button>
+      </a>
       <p>
-        <button type="submit">Enviar</button>
         <button type="reset">Resetear</button>
       </p>
 
@@ -77,5 +69,6 @@
   </main>
 </body>
 </html>
+
 
 
