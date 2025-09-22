@@ -7,14 +7,14 @@
 <body>
   <main>
     <h1>Formulario de contacto</h1>
-
+    <form action="Confirmacion.html" method="get">
       <p>
-        <label for="asunto">Asunto <span aria-hidden="true">*</span></label><br>
+        <label for="asunto">Asunto</label><br>
         <input type="text" id="asunto" name="asunto" required>
       </p>
 
       <p>
-        <label for="comentario">Comentario o pregunta <span aria-hidden="true">*</span></label><br>
+        <label for="comentario">Comentario o pregunta</label><br>
         <textarea id="comentario" name="comentario" rows="6" required></textarea>
       </p>
 
@@ -58,10 +58,8 @@
         <label for="info">Deseo recibir más información</label>
       </p>
 
-      <a href="Confirmacion.html">
-            <button type="button">Enviar</button>
-      </a>
       <p>
+        <button type="button">Enviar</button>
         <button type="reset">Resetear</button>
       </p>
 
@@ -69,6 +67,7 @@
   </main>
 </body>
 </html>
+
 
 
 
