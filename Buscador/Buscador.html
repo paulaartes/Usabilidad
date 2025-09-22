@@ -19,66 +19,56 @@
 
     <main>
         <form action="RespuestaBuscador.html">
-            <section id="Descripción">
-                <label for="Descripción">Descripción:</label><br>
-                <input type="text" id="Descripción" name="Descripción" required><br>
-                <br>
-            </section>
+            <label for="Descripción">Descripción:</label><br>
+            <input type="text" id="Descripción" name="Descripción" required><br>
+            <br>
 
-            <section id="Causas">
-                <label for="Causas">Causas:</label><br>
-                <input type="text" id="Causas" name="Causas"><br>
-                <br>
-            </section>
+            <label for="Causas">Causas:</label><br>
+            <input type="text" id="Causas" name="Causas"><br>
+            <br>
 
-            <section id="Síntomas">
-                <label for="Síntomas">Síntomas:</label><br>
-                <select id="cars" name="cars">
-                    <option value="Fiebre">Fiebre</option>
-                    <option value="Cefalea">Cefalea</option>
-                    <option value="Tos">Tos</option>
-                    <option value="Fatiga">Fatiga</option>
-                    <option value="Náuseas">Náuseas</option>
-                    <option value="Dolor muscular">Dolor muscular</option>
-                    <option value="Dolor articular">Dolor articular</option>
-                    <option value="Mareos">Mareos</option>
-                    <option value="Disnea">Disnea</option>
-                </select>
-                <br><br>
-            </section>
+            <label for="Síntomas">Síntomas:</label><br>
+            <select id="Síntomas" name="Síntomas">
+                <option value="Fiebre">Fiebre</option>
+                <option value="Cefalea">Cefalea</option>
+                <option value="Tos">Tos</option>
+                <option value="Fatiga">Fatiga</option>
+                <option value="Náuseas">Náuseas</option>
+                <option value="Dolor muscular">Dolor muscular</option>
+                <option value="Dolor articular">Dolor articular</option>
+                <option value="Mareos">Mareos</option>
+                <option value="Disnea">Disnea</option>
+            </select>
+            <br><br>
 
-            <section id="Pruebas y exámenes">
-                <label for="Pruebas y exámenes">Pruebas y exámenes:</label><br>
-                <select id="cars" name="cars">
-                    <option value="Analítica de sangre">Analítica de sangre</option>
-                    <option value="Medición de la Presión Arterial">Medición de la Presión Arterial</option>
-                    <option value="Electrocardiograma ">Electrocardiograma </option>
-                    <option value="Radiografía">Radiografía</option>
-                    <option value="Resonancia Magnética">Resonancia Magnética</option>
-                    <option value="Test cutáneo">Test cutáneo</option>
-                    <option value="Uroanálisis">Uroanálisis</option>
-                    <option value="TAC">TAC</option>
-                    <option value="Electroencéfalograma">Electroencéfalograma</option>
-                </select>
-                <br><br>
-            </section>
+            <label for="Pruebas_y_exámenes">Pruebas y exámenes:</label><br>
+            <select id="Pruebas_y_exámenes" name="Pruebas y exámenes">
+                <option value="Analítica de sangre">Analítica de sangre</option>
+                <option value="Medición de la Presión Arterial">Medición de la Presión Arterial</option>
+                <option value="Electrocardiograma ">Electrocardiograma </option>
+                <option value="Radiografía">Radiografía</option>
+                <option value="Resonancia Magnética">Resonancia Magnética</option>
+                <option value="Test cutáneo">Test cutáneo</option>
+                <option value="Uroanálisis">Uroanálisis</option>
+                <option value="TAC">TAC</option>
+                <option value="Electroencéfalograma">Electroencéfalograma</option>
+            </select>
+            <br><br>
 
-            <section id="Tratamiento">
-                <label for="Tratamiento">Tratamiento:</label><br>
-                <input type="text" id="Tratamiento" name="Tratamiento"><br>
-                <br>
-            </section>
+            <label for="Tratamiento">Tratamiento:</label><br>
+            <input type="text" id="Tratamiento" name="Tratamiento"><br>
+            <br>
 
-            <section id="Expectativas">
-                <label for="Expectativas">Expectativas:</label><br>
+            <fieldset>
+                <legend>Expectativas:</legend>
                 <input type="radio" id="Positivas" name="Expectativas" value="Positivas">
                 <label for="Positivas">Positivas</label><br>
                 <input type="radio" id="Negativas" name="Expectativas" value="Negativas">
                 <label for="Negativas">Negativas</label><br>
-                <input type="radio" id="Sin definir" name="Expectativas" value="Sin definir">
-                <label for="Sin definir">Sin definir</label><br>
-                <br>
-            </section>
+                <input type="radio" id="Sin_definir" name="Expectativas" value="Sin definir">
+                <label for="Sin_definir">Sin definir</label><br>
+            </fieldset>
+            <br>
 
             <input type="submit" value="Buscar">
         </form>
