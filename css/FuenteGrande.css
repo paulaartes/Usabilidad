@@ -1,0 +1,32 @@
+/* ===== VARIABLES FUENTE GRANDE ===== */
+:root {
+    /* Mantener colores del tema claro pero aumentar tamaños */
+    --font-size-base: 20px; /* Texto redimensionable */
+    --line-height: 1.8;
+    --spacing-sm: 0.75rem; /*  Espaciado de texto  */
+    --spacing-md: 1.5rem;
+    --spacing-lg: 3rem;
+}
+
+/* Limitar ancho de texto para mejor legibilidad */
+body {
+    max-width: 100%;
+    font-family: 'Source Sans Pro', cursive, sans-serif;
+    /* 'cursive' ayuda a usuarios con dislexia */
+}
+
+article, section, .indice-contenidos { /* Longitud línea limitada  */
+    max-width: 80ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Aumentar tamaño de botones */
+.letras-container li a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.2em;
+}

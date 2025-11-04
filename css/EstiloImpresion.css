@@ -1,0 +1,144 @@
+/* ===== ESTILOS PARA IMPRESIÓN ===== */
+@page {
+    margin: 2cm;
+}
+
+/* SOBREESCRIBIR VARIABLES PARA IMPRESIÓN */
+:root {
+    /* Forzar blanco y negro para impresión */
+    --primary-color: #000000 !important; 
+    --secondary-color: #000000 !important;
+    --accent-color: #000000 !important;
+    --success-color: #000000 !important;
+    --warning-color: #000000 !important;
+    
+    /* Colores de fondo */
+    --bg-color: #ffffff !important;
+    --card-bg: #ffffff !important;
+    --header-bg: #ffffff !important;
+    --footer-bg: #ffffff !important;
+    --nav-bg: #ffffff !important;
+    --sidebar-bg: #f5f5f5 !important;
+    
+    /* Colores de texto */
+    --text-color: #000000 !important;
+    --heading-color: #000000 !important;
+    --muted-text: #333333 !important;
+    --header-text: #000000 !important;
+    --footer-text: #000000 !important;
+    
+    /* Colores de enlaces */
+    --link-color: #000000 !important;
+    --link-hover-color: #000000 !important;
+    
+    /* Colores de botones */
+    --button-bg: #ffffff !important;
+    --button-text: #000000 !important;
+    --button-hover-bg: #ffffff !important;
+    
+    /* Colores de bordes */
+    --border-color: #000000 !important;
+    
+    /* Eliminar sombras y efectos */
+    --box-shadow: none !important;
+}
+
+body {
+    font-size: 12pt;
+    line-height: 1.4;
+    color: #000;
+    background: #fff;
+    font-family: 'Source Sans Pro', cursive, sans-serif;
+}
+
+/* Ocultar elementos no esenciales */
+nav, .sidebar, .social-buttons, 
+.header-buttons, .comments-section,
+.advertisement, .related-posts,
+.letras-container, .skip-link {
+    display: none !important;
+}
+
+/* Mostrar URLs de enlaces */
+a::after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+    color: #666;
+    font-style: italic;
+}
+
+a {
+    color: #000 !important;
+    text-decoration: underline !important;
+}
+
+/* Forzar bordes negros */
+* {
+    border-color: #000000 !important;
+}
+
+article, .conBorde, fieldset, table, th, td {
+    border: 1px solid #000000 !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+/* Mejorar saltos de página */
+h1, h2, h3 {
+    page-break-after: avoid;
+}
+
+p, li, blockquote {
+    page-break-inside: avoid;
+    orphans: 3;
+    widows: 3;
+}
+
+/* Ajustar imágenes */
+img {
+    max-width: 100% !important;
+    height: auto !important;
+    filter: grayscale(100%) !important;
+    border: 1px solid #000000 !important;
+}
+
+/* Eliminar todos los efectos visuales */
+* {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    background-image: none !important;
+    border-radius: 0 !important;
+}
+
+/* Mostrar información de la página */
+body::before {
+    content: "Impreso de: MiniEnciclopedia - " url("/");
+    display: block;
+    border-bottom: 1pt solid #000;
+    margin-bottom: 1cm;
+    padding-bottom: 0.5cm;
+    font-size: 10pt;
+    color: #666;
+}
+
+/* Asegurar que el header y footer sean legibles */
+header, footer {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-bottom: 1px solid #000000 !important;
+}
+
+/* Mejorar contraste de tablas */
+table {
+    border: 2px solid #000000 !important;
+}
+
+th {
+    background-color: #f0f0f0 !important;
+    color: #000000 !important;
+}
+
+td {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}

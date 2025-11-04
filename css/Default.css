@@ -1,0 +1,60 @@
+/* ===== VARIABLES DEL TEMA CLARO ===== */
+:root {
+    /* Colores principales */
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #3498db;
+    --success-color: #27ae60;
+    --warning-color: #f39c12;
+    
+    /* Colores de fondo */
+    --bg-color: #f9f9f9;
+    --card-bg: #ffffff;
+    --header-bg: #2c3e50;
+    --footer-bg: #2c3e50;
+    --nav-bg: #ecf0f1;
+    --sidebar-bg: #ecf0f1;
+    
+    /* Colores de texto */
+    --text-color: #333333;
+    --heading-color: #2c3e50;
+    --muted-text: #666666;
+    --header-text: #ffffff;
+    --footer-text: #ffffff;
+    
+    /* Colores de enlaces */
+    --link-color: #3498db;
+    --link-hover-color: #3c5771;
+    
+    /* Colores de botones */
+    --button-bg: #3498db;
+    --button-text: #ffffff;
+    --button-hover-bg: #2c3e50;
+    
+    /* Colores de bordes */
+    --border-color: #bdc3c7;
+    
+    /* FUENTES ACCESIBLES */
+    --font-main: 'Source Sans Pro', 'Segoe UI', system-ui, -apple-system, 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+    --font-size-base: 16px;
+    --line-height: 1.6;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --border-radius: 4px;
+    --box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Estilos específicos para footer */
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: var(--footer-text);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

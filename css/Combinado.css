@@ -1,0 +1,68 @@
+/* ===== VARIABLES COMBINADO ===== */
+:root {
+    /* Colores principales */
+    --primary-color: #000000;
+    --secondary-color: #ffff00;
+    --accent-color: #ffff00;
+    --success-color: #00ff00;
+    --warning-color: #ff0000;
+    
+    /* Colores de fondo */
+    --bg-color: #000000;
+    --card-bg: #000000;
+    --header-bg: #000000;
+    --footer-bg: #000000;
+    --nav-bg: #000000;
+    --sidebar-bg: #000000;
+    
+    /* Colores de texto */
+    --text-color: #ffffff;
+    --heading-color: #ffffff;
+    --muted-text: #cccccc;
+    --header-text: #ffff00;
+    --footer-text: #ffff00;
+    
+    /* Colores de enlaces */
+    --link-color: #ffff00; /* Enlaces visibles */
+    --link-hover-color: #ffffff;
+    
+    /* Colores de botones */
+    --button-bg: #ffff00;
+    --button-text: #000000;
+    --button-hover-bg: #ffffff;
+    
+    /* Colores de bordes */
+    --border-color: #ffff00;
+    
+    /* Mejorar bordes */
+    --box-shadow: 0 0 0 2px var(--border-color);
+
+    /* Mantener colores del tema claro pero aumentar tamaños */
+    --font-size-base: 20px;
+    --line-height: 1.8;
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 3rem;
+}
+
+/* Forzar estilos de accesibilidad */
+a {
+    text-decoration: underline !important;
+    font-weight: bold;
+}
+
+/* Limitar ancho de texto */
+article, section {
+    max-width: 70ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Aumentar botones */
+.letras-container li a {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 1.3em;
+    border: 2px solid var(--border-color);
+}

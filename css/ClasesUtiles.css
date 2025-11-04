@@ -1,0 +1,22 @@
+/* ===== CLASES DE UTILIDAD ===== */
+.conBorde {
+    border: 1px solid var(--border-color, #bdc3c7);
+    border-radius: var(--border-radius, 4px);
+    padding: var(--spacing-md, 1rem);
+    margin-bottom: var(--spacing-md, 1rem);
+}
+
+.anuncio {
+    background-color: #fff9e6;
+    border-left: 4px solid var(--warning-color, #f39c12);
+    padding: var(--spacing-md, 1rem);
+    margin: var(--spacing-md, 1rem) 0;
+}
+
+.texto-centrado {
+    text-align: center;
+}
+
+.texto-derecha {
+    text-align: right;
+}

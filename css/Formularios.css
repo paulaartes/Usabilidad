@@ -1,0 +1,67 @@
+/* ===== FORMULARIOS ===== */
+form {
+    margin: var(--spacing-md, 1rem) 0;
+}
+
+fieldset {
+    border: 1px solid var(--border-color, #bdc3c7);
+    border-radius: var(--border-radius, 4px);
+    padding: var(--spacing-md, 1rem);
+    margin-bottom: var(--spacing-md, 1rem);
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 var(--spacing-sm, 0.5rem);
+    color: var(--primary-color, #2c3e50);
+}
+
+label {
+    display: block;
+    margin-bottom: var(--spacing-sm, 0.5rem);
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: var(--spacing-sm, 0.5rem);
+    border: 1px solid var(--border-color, #bdc3c7);
+    border-radius: var(--border-radius, 4px);
+    font-family: inherit;
+    font-size: inherit;
+    margin-bottom: var(--spacing-md, 1rem);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: var(--spacing-sm, 0.5rem);
+}
+
+button, input[type="submit"], input[type="reset"] {
+    background-color: var(--button-bg, #3498db);
+    color: var(--button-text, #ffffff);
+    border: none;
+    padding: var(--spacing-sm, 0.5rem) var(--spacing-md, 1rem);
+    border-radius: var(--border-radius, 4px);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    margin-right: var(--spacing-sm, 0.5rem);
+    transition: background-color 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: var(--button-hover-bg, #2c3e50);
+}
+
+input[type="reset"] {
+    background-color: var(--nav-bg, #ecf0f1);
+    color: var(--text-color, #333333);
+}
