@@ -1,0 +1,127 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniEnciclopedia - Buscador</title>
+    <link rel="stylesheet" href="../CSS/EstructuraPrincipal.css">
+    <link rel="stylesheet" href="../CSS/Formularios.css">
+    <link rel="stylesheet" href="../CSS/ClasesUtiles.css">
+
+    <link rel="stylesheet" href="../CSS/Default.css" title="Estilo principal" />
+
+    <link rel="alternate stylesheet" href="../CSS/ModoNoche.css" title="Modo oscuro" />
+    <link rel="alternate stylesheet" href="../CSS/AltoContraste.css" title="Alto contraste" />
+    <link rel="alternate stylesheet" href="../CSS/FuenteGrande.css" title="Fuente grande" />
+    <link rel="alternate stylesheet" href="../CSS/Combinado.css" title="Alto contraste y fuente grande" />
+    
+    <link rel="stylesheet" href="CSS/EstiloImpresion.css" media="print" />
+</head>
+<body>
+    
+    <header>
+        <div class="header-container">
+            <a href="../PaginaPrincipal.html" class="logo-link">
+                <img src="../Imágenes/Logo.png" 
+                    alt="Logo Enciclopedia" 
+                    width="300" 
+                    height="75">
+            </a>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Migas de pan -->
+        <nav aria-label="Migas de pan">
+            <a href="../PaginaPrincipal.html">Inicio</a> > 
+            <span>Buscador</span>
+        </nav>
+
+        <section>
+            <h2>Buscar enfermedades</h2>
+            <form action="RespuestaBuscador.html">
+                <div class="form-row">
+                    <div class="form-col">
+                        <label for="Descripción">Descripción (Obligatorio)</label>
+                        <input type="text" id="Descripción" name="Descripción" required
+                            placeholder="Ej: dolor de cabeza persistente">
+                    </div>
+                    
+                    <div class="form-col">
+                        <label for="Causas">Causas</label>
+                        <input type="text" id="Causas" name="Causas"
+                                placeholder="Ej: factores genéticos, ambientales">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-col">
+                        <label for="Síntomas">Síntomas</label>
+                        <select id="Síntomas" name="Síntomas">
+                            <option value="">Seleccione un síntoma</option>
+                            <option value="Fiebre">Fiebre</option>
+                            <option value="Cefalea">Cefalea</option>
+                            <option value="Tos">Tos</option>
+                            <option value="Fatiga">Fatiga</option>
+                            <option value="Náuseas">Náuseas</option>
+                            <option value="Dolor muscular">Dolor muscular</option>
+                            <option value="Dolor articular">Dolor articular</option>
+                            <option value="Mareos">Mareos</option>
+                            <option value="Disnea">Disnea</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-col">
+                        <label for="Pruebas_y_exámenes">Pruebas y exámenes</label>
+                        <select id="Pruebas_y_exámenes" name="Pruebas y exámenes">
+                            <option value="">Seleccione una prueba</option>
+                            <option value="Analítica de sangre">Analítica de sangre</option>
+                            <option value="Medición de la Presión Arterial">Medición de la Presión Arterial</option>
+                            <option value="Electrocardiograma">Electrocardiograma</option>
+                            <option value="Radiografía">Radiografía</option>
+                            <option value="Resonancia Magnética">Resonancia Magnética</option>
+                            <option value="Test cutáneo">Test cutáneo</option>
+                            <option value="Uroanálisis">Uroanálisis</option>
+                            <option value="TAC">TAC</option>
+                            <option value="Electroencéfalograma">Electroencéfalograma</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-col">
+                        <label for="Tratamiento">Tratamiento</label>
+                        <input type="text" id="Tratamiento" name="Tratamiento"
+                                placeholder="Ej: antibióticos, reposo">
+                    </div>
+                </div>
+
+                <fieldset>
+                    <legend>Expectativas</legend>
+                    <div class="form-group">
+                        <label for="Positivas">Positivas</label>
+                        <input type="radio" id="Positivas" name="Expectativas" value="Positivas">
+                        
+                        <label for="Negativas">Negativas</label>
+                        <input type="radio" id="Negativas" name="Expectativas" value="Negativas">
+                        
+                        <label for="Sin_definir">Sin definir</label>
+                        <input type="radio" id="Sin_definir" name="Expectativas" value="Sin definir">
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <input type="submit" value="Buscar">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>© Paula Artés | Iván Galiano</p>
+            <p>Curso 2025-2026</p>
+            <p>Grado en Ingeniería Biomédica UA</p>
+        </div>
+    </footer>
+</body>
+</html>
