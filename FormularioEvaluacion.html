@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Evaluación Médica - MiniEnciclopedia</title>
+    
+    <link rel="stylesheet" href="CSS/EstructuraPrincipal.css">
+    <link rel="stylesheet" href="CSS/Formularios.css">
+    <link rel="stylesheet" href="CSS/ClasesUtiles.css">
+
+    <link rel="stylesheet" href="CSS/Default.css" title="Estilo principal" />
+
+    <link rel="alternate stylesheet" href="CSS/ModoNoche.css" title="Modo oscuro" />
+    <link rel="alternate stylesheet" href="CSS/AltoContraste.css" title="Alto contraste" />
+    <link rel="alternate stylesheet" href="CSS/FuenteGrande.css" title="Fuente grande" />
+    <link rel="alternate stylesheet" href="CSS/Combinado.css" title="Alto contraste y fuente grande" />
+    
+    <link rel="stylesheet" href="CSS/EstiloImpresion.css" media="print" />
+</head>
+<body>
+    
+    <header>
+        <div class="header-container">
+            <a href="PaginaPrincipal.html" class="logo-link">
+                <img src="Imágenes/Logo.png" 
+                    alt="Logo MiniEnciclopedia" 
+                    width="300" 
+                    height="75">
+            </a>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Migas de pan -->
+        <nav aria-label="Migas de pan">
+            <a href="PaginaPrincipal.html">Inicio</a> > 
+            <span>Formulario de Evaluación</span>
+        </nav>
+        
+        <section>
+            <h2>Formulario de Evaluación de Síntomas</h2>
+            
+            <!-- Instrucciones -->
+            <div class="anuncio">
+                <p><strong>Instrucciones:</strong> Los campos marcados con un asterisco (*) son obligatorios. 
+                Por favor, complete toda la información solicitada para una evaluación precisa.</p>
+            </div>
+            
+            <form action="Confirmacion.html" method="post">
+                <div class="form-row">
+                    <!-- Información personal -->
+                    <div class="form-col">
+                        <fieldset>
+                            <legend>Información Personal</legend>
+                            
+                            <div class="form-group">
+                                <label for="nombre">Nombre completo *</label>
+                                <input type="text" id="nombre" name="nombre" required 
+                                       placeholder="Ej: María González López">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="fecha-nacimiento">Fecha de nacimiento *</label>
+                                <input type="date" id="fecha-nacimiento" name="fecha_nacimiento" required
+                                       min="1900-01-01" max="2023-12-31">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="edad">Edad *</label>
+                                <input type="number" id="edad" name="edad" required
+                                       min="1" max="120" placeholder="Ej: 35">
+                                <span>Años</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Correo electrónico *</label>
+                                <input type="email" id="email" name="email" required
+                                       placeholder="usuario@ejemplo.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="telefono">Teléfono de contacto</label>
+                                <input type="tel" id="telefono" name="telefono"
+                                       placeholder="Ej: 612345678">
+                            </div>
+                        </fieldset>
+                    </div>
+                    
+                    <!-- Síntomas -->
+                    <div class="form-col">
+                        <fieldset>
+                            <legend>Evaluación de Síntomas</legend>
+                            
+                            <div class="form-group">
+                                <label for="sintoma-principal">Síntoma principal *</label>
+                                <input type="text" id="sintoma-principal" name="sintoma_principal" required
+                                       placeholder="Describa su síntoma principal">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="intensidad-dolor">Intensidad del dolor (si aplica)</label>
+                                <input type="range" id="intensidad-dolor" name="intensidad_dolor"
+                                       min="0" max="10" step="1" value="0">
+                                <span id="valor-dolor">0</span>/10
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="fecha-inicio">Fecha de inicio de los síntomas *</label>
+                                <input type="date" id="fecha-inicio" name="fecha_inicio" required
+                                       max="2023-12-31">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="frecuencia">Frecuencia de los síntomas</label>
+                                <select id="frecuencia" name="frecuencia">
+                                    <option value="">Seleccione una opción</option>
+                                    <option value="constante">Constante</option>
+                                    <option value="diaria">Diaria</option>
+                                    <option value="semanal">Semanal</option>
+                                    <option value="mensual">Mensual</option>
+                                    <option value="ocasional">Ocasional</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <!-- Antecedentes médicos -->
+                <fieldset>
+                    <legend>Antecedentes Médicos</legend>
+                    
+                    <div class="form-group">
+                        <label for="enfermedades-previas">Enfermedades previas conocidas</label>
+                        <textarea id="enfermedades-previas" name="enfermedades_previas" 
+                                  rows="4" placeholder="Ej: Hipertensión diagnosticada en 2018"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="medicamentos">Medicamentos actuales</label>
+                        <textarea id="medicamentos" name="medicamentos" 
+                                  rows="4" placeholder="Ej: Enalapril 10mg, 1 comprimido al día"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="alergias">Alergias conocidas</label>
+                        <input type="text" id="alergias" name="alergias"
+                               placeholder="Ej: Penicilina, polen">
+                    </div>
+                </fieldset>
+
+                <!-- Factores de riesgo -->
+                <fieldset>
+                    <legend>Factores de Riesgo y Estilo de Vida</legend>
+                    
+                    <div class="form-group">
+                        <input type="checkbox" id="fumador" name="fumador" value="si">
+                        <label for="fumador">Fumador actual</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="checkbox" id="alcohol" name="alcohol" value="si">
+                        <label for="alcohol">Consumo regular de alcohol</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="checkbox" id="ejercicio" name="ejercicio" value="si">
+                        <label for="ejercicio">Realiza ejercicio regularmente</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="horas-sueno">Horas de sueño promedio por noche</label>
+                        <input type="number" id="horas-sueno" name="horas_sueno"
+                               min="0" max="24" step="0.5" placeholder="Ej: 7.5">
+                    </div>
+                </fieldset>
+
+                <!-- Consentimiento -->
+                <fieldset>
+                    <legend>Consentimiento y Envío</legend>
+                    
+                    <div class="form-group">
+                        <input type="checkbox" id="consentimiento" name="consentimiento" required>
+                        <label for="consentimiento">Acepto que esta información sea utilizada únicamente con fines educativos y de evaluación médica *</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="checkbox" id="contacto" name="contacto">
+                        <label for="contacto">Deseo recibir información sobre nuevos contenidos médicos</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit">Enviar evaluación</button>
+                        <input type="reset" value="Limpiar formulario">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        
+        <!-- Nota importante -->
+        <aside class="anuncio">
+            <h3>Nota importante</h3>
+            <p>Este formulario es únicamente con fines educativos. <strong>No sustituye la consulta médica profesional.</strong> 
+            Si experimenta síntomas graves, busque atención médica inmediata.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>© Paula Artés | Iván Galiano</p>
+            <p>Curso 2025-2026</p>
+            <p>Grado en Ingeniería Biomédica UA</p>
+            <p><a href="Contacto/Contacto.html">Contacto</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Script para mostrar el valor del rango de dolor
+        document.getElementById('intensidad-dolor').addEventListener('input', function() {
+            document.getElementById('valor-dolor').textContent = this.value;
+        });
+    </script>
+</body>
+</html>

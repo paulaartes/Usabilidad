@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaración de Accesibilidad - MiniEnciclopedia</title>
+    <link rel="stylesheet" href="CSS/EstructuraPrincipal.css">
+    <link rel="stylesheet" href="CSS/ClasesUtiles.css">
+    <link rel="stylesheet" href="CSS/Tablas.css">
+
+    <link rel="stylesheet" href="CSS/Default.css" title="Estilo principal" />
+
+    <link rel="alternate stylesheet" href="CSS/ModoNoche.css" title="Modo oscuro" />
+    <link rel="alternate stylesheet" href="CSS/AltoContraste.css" title="Alto contraste" />
+    <link rel="alternate stylesheet" href="CSS/FuenteGrande.css" title="Fuente grande" />
+    <link rel="alternate stylesheet" href="CSS/Combinado.css" title="Alto contraste y fuente grande" />
+    
+    <link rel="stylesheet" href="CSS/EstiloImpresion.css" media="print" />
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <header>
+        <div class="header-container">
+            <a href="PaginaPrincipal.html" class="logo-link">
+                <img src="Imágenes/Logo.png" 
+                    alt="Logo MiniEnciclopedia - Volver a página principal" 
+                    width="300" 
+                    height="75">
+            </a>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Migas de pan -->
+        <nav aria-label="Migas de pan">
+            <a href="PaginaPrincipal.html">Inicio</a> > 
+            <span>Declaración de Accesibilidad</span>
+        </nav>
+
+        <section>
+            <h1>Declaración de Accesibilidad</h1>
+            <article class="conBorde">
+                <p><strong>MiniEnciclopedia</strong> se compromete a hacer accesibles sus sitios web para todas las personas, independientemente de sus capacidades o discapacidades, de conformidad con el Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público.</p>
+                <p>Esta declaración de accesibilidad se aplica al sitio web MiniEnciclopedia (<a href="PaginaPrincipal.html">página principal</a>) y todas sus páginas asociadas.</p>
+            </article>
+        </section>
+        
+        <section>
+            <h2>Estado de Conformidad</h2>
+            <article class="conBorde">
+                <p>Este sitio web es <strong>conforme</strong> con el nivel AA de las <abbr title="Pautas de Accesibilidad para el Contenido Web">WCAG</abbr> 2.1 (<span lang="en">Web Content Accessibility Guidelines</span>), cumpliendo con los requisitos esenciales y recomendados de accesibilidad web.</p>
+            </article>
+        </section>
+        
+        <section>
+            <h2>Características de Accesibilidad Implementadas</h2>
+            
+            <article>
+                <h3>Navegación y Estructura</h3>
+                <ul>
+                    <li><strong>Enlace "Saltar al contenido":</strong> Permite saltar directamente al contenido principal evitando la navegación repetitiva</li>
+                    <li><strong>Etiquetado semántico HTML5:</strong> Uso de elementos semánticos (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;footer&gt;</code>)</li>
+                    <li><strong>Jerarquía de encabezados:</strong> Estructura lógica de encabezados (<code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>) sin saltos de nivel</li>
+                    <li><strong>Migas de pan (Breadcrumbs):</strong> Indicación de la ubicación actual dentro del sitio</li>
+                    <li><strong>Múltiples formas de navegación:</strong> Menú principal, índice alfabético y buscador</li>
+                </ul>
+            </article>
+            
+            <article>
+                <h3>Contenido y Multimedia</h3>
+                <ul>
+                    <li><strong>Texto alternativo en imágenes:</strong> Todas las imágenes contienen descripciones adecuadas en el atributo <code>alt</code></li>
+                    <li><strong>Idioma definido:</strong> Idioma principal español especificado con <code>lang="es"</code></li>
+                    <li><strong>Formularios accesibles:</strong> Etiquetas asociadas explícitamente, agrupación de campos y instrucciones claras</li>
+                    <li><strong>Tablas accesibles:</strong> Uso de <code>&lt;caption&gt;</code>, <code>&lt;th&gt;</code> y atributos <code>scope</code></li>
+                </ul>
+            </article>
+            
+            <article>
+                <h3>Estilos y Presentación Visual</h3>
+                <h4>Uso Correcto del Color</h4>
+                <ul>
+                    <li><strong>Contraste adecuado:</strong> Relación de contraste mínimo de 4.5:1 para texto normal y 3:1 para texto grande</li>
+                    <li><strong>Información no solo por color:</strong> La información se transmite mediante múltiples indicadores visuales</li>
+                    <li><strong>Combinaciones de color accesibles:</strong> Paletas que consideran daltonismo y otras deficiencias de visión al color</li>
+                </ul>
+                
+                <h4>Resaltado del Foco</h4>
+                <ul>
+                    <li><strong>Indicadores de foco visibles:</strong> Todos los elementos interactivos muestran claramente cuándo tienen el foco</li>
+                    <li><strong>Múltiples indicadores visuales:</strong> Cambio de color, subrayado y outline para estados de foco y hover</li>
+                    <li><strong>Contraste en estados interactivos:</strong> Los estados hover y focus mantienen contraste adecuado</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>Estilos Accesibles Alternativos</h2>
+            <article>
+                <h3>Cómo Activar las Hojas de Estilo Accesibles</h3>
+                <p>El sitio web ofrece múltiples estilos visuales para adaptarse a diferentes necesidades de accesibilidad:</p>
+                
+                <table>
+                    <caption>Estilos alternativos disponibles</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Estilo</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Cómo activarlo</th>
+                            <th scope="col">Beneficios principales</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Modo oscuro</th>
+                            <td>Fondo oscuro con texto claro</td>
+                            <td>Ver → Estilo de página → Modo oscuro</td>
+                            <td>Reduce fatiga visual, ahorra batería en dispositivos OLED</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Alto contraste</th>
+                            <td>Combinaciones de color de máximo contraste</td>
+                            <td>Ver → Estilo de página → Alto contraste</td>
+                            <td>Mejora legibilidad para personas con baja visión</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Fuente grande</th>
+                            <td>Tamaño de texto aumentado y mejor espaciado</td>
+                            <td>Ver → Estilo de página → Fuente grande</td>
+                            <td>Facilita lectura para personas con visión reducida</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Combinado</th>
+                            <td>Alto contraste + fuente grande</td>
+                            <td>Ver → Estilo de página → Alto contraste y fuente grande</td>
+                            <td>Máxima accesibilidad visual combinada</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="anuncio">
+                    <h4>📋 Instrucciones detalladas por navegador:</h4>
+                    <ul>
+                        <li><strong>Mozilla Firefox:</strong> Menú "Ver" → "Estilo de página" → Seleccionar estilo deseado</li>
+                        <li><strong>Internet Explorer:</strong> Menú "Ver" → "Estilo" → Seleccionar estilo deseado</li>
+                        <li><strong>Google Chrome/Edge:</strong> Actualmente no soportan selección nativa de estilos alternativos</li>
+                    </ul>
+                </div>
+            </article>
+            
+            <article>
+                <h3>Características de los Estilos Accesibles</h3>
+                <ul>
+                    <li><strong>Tipografías accesibles:</strong> Uso de Source Sans Pro y Atkinson Hyperlegible para mejor legibilidad</li>
+                    <li><strong>Espaciado mejorado:</strong> Interlineado aumentado y límite de 80 caracteres por línea</li>
+                    <li><strong>Texto no justificado:</strong> Alineación a la izquierda para mejor legibilidad</li>
+                    <li><strong>Enlaces siempre subrayados:</strong> En estilos de alto contraste para clara identificación</li>
+                    <li><strong>Foco altamente visible:</strong> Outline de 3px en elementos interactivos</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>Compatibilidad con Tecnologías de Asistencia</h2>
+            <article class="conBorde">
+                <p>El sitio web ha sido diseñado para ser compatible con:</p>
+                <ul>
+                    <li><strong>Lectores de pantalla:</strong> JAWS, NVDA, VoiceOver, TalkBack</li>
+                    <li><strong>Software de ampliación:</strong> Lupa de Windows, ZoomText</li>
+                    <li><strong>Navegación por teclado:</strong> Compatibilidad completa con navegación mediante Tab, Enter y teclas de acceso</li>
+                    <li><strong>Dispositivos de entrada alternativos:</strong> Conmutadores, pulsadores, software de reconocimiento vocal</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>Preparación del Contenido para Impresión</h2>
+            <article>
+                <p>El sitio web incluye una hoja de estilo específica para impresión que:</p>
+                <ul>
+                    <li>Optimiza el contraste (blanco y negro)</li>
+                    <li>Elimina elementos de navegación no esenciales</li>
+                    <li>Muestra las URLs junto a los enlaces</li>
+                    <li>Utiliza tipografía serif para mejor legibilidad en papel</li>
+                    <li>Ajusta tamaños de fuente a unidades absolutas (pt)</li>
+                </ul>
+                <p><strong>Para usar:</strong> Archivo → Imprimir o Ctrl+P</p>
+            </article>
+        </section>
+        
+        <section>
+            <h2>Limitaciones Conocidas</h2>
+            <article class="conBorde">
+                <p>A pesar de nuestros esfuerzos por garantizar la accesibilidad de este sitio web, pueden existir algunas limitaciones:</p>
+                <ul>
+                    <li>La selección de estilos alternativos no se conserva al cambiar de página (limitación técnica de los estilos alternativos nativos)</li>
+                    <li>Algunos navegadores modernos (Chrome, Edge) no soportan la selección nativa de estilos alternativos</li>
+                    <li>El contenido generado dinámicamente podría requerir actualización manual de características de accesibilidad</li>
+                </ul>
+            </article>
+        </section>
+        
+        <section>
+            <h2>Proceso de Evaluación</h2>
+            <article class="conBorde">
+                <p>Para la elaboración de esta declaración de accesibilidad se han realizado las siguientes comprobaciones:</p>
+                <ul>
+                    <li><strong>Evaluación técnica:</strong> Validación automática con herramientas como WAVE, axe DevTools</li>
+                    <li><strong>Evaluación manual:</strong> Revisión de cumplimiento de criterios WCAG 2.1</li>
+                    <li><strong>Pruebas de usuario:</strong> Pruebas con personas con diferentes discapacidades</li>
+                    <li><strong>Pruebas con tecnologías de asistencia:</strong> Verificación con lectores de pantalla y navegación por teclado</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <p>© Paula Artés | Iván Galiano</p>
+                <p>Curso 2025-2026</p>
+                <p>Grado en Ingeniería Biomédica UA</p>
+            </div>
+            <div>
+                <p><a href="PaginaPrincipal.html">Volver a la página principal</a></p>
+                <p><a href="#main-content">Volver al inicio del contenido</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
