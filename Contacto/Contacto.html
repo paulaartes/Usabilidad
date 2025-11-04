@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiniEnciclopedia - Contacto</title>
+    <link rel="stylesheet" href="../CSS/EstructuraPrincipal.css">
+    <link rel="stylesheet" href="../CSS/Formularios.css">
+    <link rel="stylesheet" href="../CSS/ClasesUtiles.css">
+
+    <link rel="stylesheet" href="../CSS/Default.css" title="Estilo principal" />
+
+    <link rel="alternate stylesheet" href="../CSS/ModoNoche.css" title="Modo oscuro" />
+    <link rel="alternate stylesheet" href="../CSS/AltoContraste.css" title="Alto contraste" />
+    <link rel="alternate stylesheet" href="../CSS/FuenteGrande.css" title="Fuente grande" />
+    <link rel="alternate stylesheet" href="../CSS/Combinado.css" title="Alto contraste y fuente grande" />
+    
+    <link rel="stylesheet" href="CSS/EstiloImpresion.css" media="print" />
+</head>
+<body>
+  
+  <header>
+    <div class="header-container">
+      <a href="../PaginaPrincipal.html" class="logo-link">
+        <img src="../Imágenes/Logo.png" 
+            alt="Logo Enciclopedia" 
+            width="300" 
+            height="75">
+      </a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Migas de pan -->
+    <nav aria-label="Migas de pan">
+      <a href="../PaginaPrincipal.html">Inicio</a> > 
+      <span>Contacto</span>
+    </nav>
+
+    <section>
+      <h2>Contacte con nosotros</h2>
+      
+      <div class="anuncio">
+        <p><strong>Instrucciones:</strong> Los campos marcados con <span aria-label="obligatorio">*</span> son obligatorios.</p>
+      </div>
+
+      <form action="Confirmacion.html">
+        <!-- Información de contacto con borde -->
+        <div class="conBorde">
+          <h2>Información de contacto</h2>
+          
+          <div class="form-group">
+            <label for="asunto">Asunto <span aria-label="obligatorio">*</span></label>
+            <input type="text" id="asunto" name="asunto" required 
+                  aria-required="true" placeholder="Ej: Consulta sobre síntomas">
+          </div>
+          
+          <div class="form-group">
+            <label for="comentario">Comentario o pregunta <span aria-label="obligatorio">*</span></label>
+            <textarea id="comentario" name="comentario" rows="6" required 
+                      aria-required="true" placeholder="Describa su consulta en detalle"></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label for="yo-soy">Yo soy</label>
+            <select id="yo-soy" name="yo_soy" aria-describedby="ayuda-yo-soy">
+              <option value="" selected disabled>Selecciona una opción</option>
+              <option value="paciente">Paciente</option>
+              <option value="cientifico">Científico</option>
+              <option value="medico">Médico</option>
+              <option value="educador">Educador</option>
+              <option value="fabricante">Fabricante</option>
+              <option value="periodista">Periodista</option>
+            </select>
+            <small id="ayuda-yo-soy">Seleccione su perfil para poder ayudarle mejor</small>
+          </div>
+        </div>
+
+        <!-- Información personal con borde -->
+        <div class="conBorde">
+          <h2>Información personal (opcional)</h2>
+          
+          <div class="form-group">
+            <label for="fecha-nac">Fecha de nacimiento</label>
+            <input type="date" id="fecha-nac" name="fecha_nacimiento"
+                  aria-describedby="ayuda-fecha">
+            <small id="ayuda-fecha">Solo para estadísticas demográficas</small>
+          </div>
+
+          <!-- Sexo con fieldset (correcto) -->
+          <fieldset class="form-group">
+            <legend><strong>Sexo</strong></legend>
+            
+            <div>
+              <input type="radio" id="sexo-hombre" name="sexo" value="hombre">
+              <label for="sexo-hombre">Hombre</label>
+            </div>
+            <div>
+              <input type="radio" id="sexo-mujer" name="sexo" value="mujer">
+              <label for="sexo-mujer">Mujer</label>
+            </div>
+            <div>
+              <input type="radio" id="sexo-otro" name="sexo" value="otro">
+              <label for="sexo-otro">Otro</label>
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" 
+                   placeholder="ejemplo@correo.com">
+          </div>
+        </div>
+
+        <!-- Preferencias con borde -->
+        <div class="conBorde">
+          <h2>Preferencias</h2>
+          
+          <fieldset class="form-group">
+            <legend>Recibir información</legend>
+            <div>
+              <input type="checkbox" id="info" name="deseo_info" value="si">
+              <label for="info">Deseo recibir más información sobre nuevos contenidos médicos</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <!-- Botones -->
+        <div class="form-group">
+          <button type="submit">Enviar</button> 
+          <input type="reset" value="Resetear">
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>© Paula Artés | Iván Galiano</p>
+      <p>Curso 2025-2026</p>
+      <p>Grado en Ingeniería Biomédica UA</p>
+    </div>
+  </footer>
+</body>
+</html>
